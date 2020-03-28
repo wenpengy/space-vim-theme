@@ -22,18 +22,18 @@ let g:colors_name = 'space_vim_theme'
 if &background ==# 'dark'
   let g:terminal_ansi_colors = [
         \ '#292b2e', '#d26487', '#35a8a5', '#b89f33', '#6981c5', '#a15ea7', '#288668', '#727272',
-        \ '#34323e', '#f2241f', '#67b11d', '#b1951d', '#4f97d7', '#bc6ec5', '#2d9574', '#b2b2b2']
+        \ '#34323e', '#f2241f', '#67b11d', '#b1951d', '#4f97d7', '#bc6ec5', '#2d9574', '#fff0f5']
   if !has('gui_running') && get(g:, 'space_vim_transp_bg', 0)
-    hi Normal ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi Normal ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi CursorLineNr ctermfg=170 ctermbg=NONE guifg=#bc6ec5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi FoldColumn ctermfg=170 ctermbg=NONE guifg=#bc6ec5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi SignColumn ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi SignColumn ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi VertSplit ctermfg=234 ctermbg=NONE guifg=#212026 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   else
-    hi Normal ctermfg=249 ctermbg=235 guifg=#b2b2b2 guibg=#292b2e guisp=NONE cterm=NONE gui=NONE
+    hi Normal ctermfg=249 ctermbg=235 guifg=#fff0f5 guibg=#292b2e guisp=NONE cterm=NONE gui=NONE
     hi CursorLineNr ctermfg=170 ctermbg=234 guifg=#bc6ec5 guibg=#212026 guisp=NONE cterm=NONE gui=NONE
     hi FoldColumn ctermfg=170 ctermbg=234 guifg=#bc6ec5 guibg=#212026 guisp=NONE cterm=NONE gui=NONE
-    hi SignColumn ctermfg=249 ctermbg=235 guifg=#b2b2b2 guibg=#292b2e guisp=NONE cterm=NONE gui=NONE
+    hi SignColumn ctermfg=249 ctermbg=235 guifg=#fff0f5 guibg=#292b2e guisp=NONE cterm=NONE gui=NONE
     hi VertSplit ctermfg=234 ctermbg=235 guifg=#212026 guibg=#292b2e guisp=NONE cterm=NONE gui=NONE
   endif
   hi ColorColumn ctermfg=NONE ctermbg=234 guifg=NONE guibg=#212026 guisp=NONE cterm=NONE gui=NONE
@@ -69,7 +69,7 @@ if &background ==# 'dark'
   hi SpellCap ctermfg=32 ctermbg=NONE guifg=#4f97d7 guibg=NONE guisp=#4f97d7 cterm=NONE,underline gui=NONE,italic,undercurl
   hi SpellLocal ctermfg=29 ctermbg=NONE guifg=#2d9574 guibg=NONE guisp=#2d9574 cterm=NONE,underline gui=NONE,italic,undercurl
   hi SpellRare ctermfg=170 ctermbg=NONE guifg=#bc6ec5 guibg=NONE guisp=#bc6ec5 cterm=NONE,underline gui=NONE,italic,undercurl
-  hi StatusLine ctermfg=249 ctermbg=60 guifg=#b2b2b2 guibg=#5d4d7a guisp=NONE cterm=NONE gui=NONE
+  hi StatusLine ctermfg=249 ctermbg=60 guifg=#fff0f5 guibg=#5d4d7a guisp=NONE cterm=NONE gui=NONE
   hi StatusLineNC ctermfg=60 ctermbg=236 guifg=#5d4d7a guibg=#34323e guisp=NONE cterm=NONE gui=NONE
   hi! link StatusLineTerm StatusLine
   hi! link StatusLineTermNC StatusLineNC
@@ -157,9 +157,9 @@ if &background ==# 'dark'
     let g:terminal_color_6  = '#288668'
     let g:terminal_color_14 = '#2d9574'
     let g:terminal_color_7  = '#5b5b5b'
-    let g:terminal_color_15 = '#b2b2b2'
+    let g:terminal_color_15 = '#fff0f5'
     hi! link TermCursor Cursor
-    hi TermCursorNC ctermfg=234 ctermbg=249 guifg=#212026 guibg=#b2b2b2 guisp=NONE cterm=NONE gui=NONE
+    hi TermCursorNC ctermfg=234 ctermbg=249 guifg=#212026 guibg=#fff0f5 guisp=NONE cterm=NONE gui=NONE
   endif
   if !(get(g:, "space_vim_plugin_hi_groups", 1) || get(g:, "space_vim_filetype_hi_groups", 1))
     finish
@@ -213,17 +213,17 @@ if &background ==# 'dark'
     hi NERDTreeDirSlash ctermfg=32 ctermbg=NONE guifg=#4f97d7 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi NERDTreeOpenable ctermfg=32 ctermbg=NONE guifg=#4f97d7 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi NERDTreeClosable ctermfg=32 ctermbg=NONE guifg=#4f97d7 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi NERDTreeFile ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi NERDTreeFile ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi NERDTreeExecFile ctermfg=136 ctermbg=NONE guifg=#b1951d guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi NERDTreeUp ctermfg=168 ctermbg=NONE guifg=#ce537a guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi NERDTreeCWD ctermfg=170 ctermbg=NONE guifg=#bc6ec5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi NERDTreeHelp ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi NERDTreeHelp ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi NERDTreeToggleOn ctermfg=70 ctermbg=NONE guifg=#67b11d guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi NERDTreeToggleOff ctermfg=196 ctermbg=NONE guifg=#f2241f guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi netrwDir ctermfg=32 ctermbg=NONE guifg=#4f97d7 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi netrwClassify ctermfg=32 ctermbg=NONE guifg=#4f97d7 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi netrwLink ctermfg=239 ctermbg=NONE guifg=#44505c guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi netrwSymLink ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi netrwSymLink ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi netrwExe ctermfg=136 ctermbg=NONE guifg=#b1951d guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi netrwComment ctermfg=239 ctermbg=NONE guifg=#44505c guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi netrwList ctermfg=32 ctermbg=NONE guifg=#4f97d7 guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -261,7 +261,7 @@ if &background ==# 'dark'
     hi SignatureMarkText ctermfg=32 ctermbg=235 guifg=#4f97d7 guibg=#292b2e guisp=NONE cterm=NONE,bold gui=NONE,bold
     hi SignatureMarkerText ctermfg=170 ctermbg=235 guifg=#bc6ec5 guibg=#292b2e guisp=NONE cterm=NONE,bold gui=NONE,bold
     hi StartifyBracket ctermfg=243 ctermbg=NONE guifg=#727272 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi StartifyFile ctermfg=249 ctermbg=235 guifg=#b2b2b2 guibg=#292b2e guisp=NONE cterm=NONE gui=NONE
+    hi StartifyFile ctermfg=249 ctermbg=235 guifg=#fff0f5 guibg=#292b2e guisp=NONE cterm=NONE gui=NONE
     hi StartifyNumber ctermfg=32 ctermbg=NONE guifg=#4f97d7 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi StartifyPath ctermfg=68 ctermbg=NONE guifg=#7590db guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
     hi StartifySlash ctermfg=32 ctermbg=NONE guifg=#4f97d7 guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -300,7 +300,7 @@ if &background ==# 'dark'
     hi htmlTagName ctermfg=133 ctermbg=NONE guifg=#a45bad guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi htmlArg ctermfg=29 ctermbg=NONE guifg=#2d9574 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi htmlScriptTag ctermfg=170 ctermbg=NONE guifg=#bc6ec5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi htmlTagN ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi htmlTagN ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi htmlSpecialTagName ctermfg=29 ctermbg=NONE guifg=#2d9574 guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
     hi htmlLink ctermfg=32 ctermbg=NONE guifg=#4f97d7 guibg=NONE guisp=NONE cterm=NONE,underline gui=NONE,underline
     hi htmlSpecialChar ctermfg=173 ctermbg=NONE guifg=#e18254 guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -379,7 +379,7 @@ if &background ==# 'dark'
     hi cssSelectorOp ctermfg=32 ctermbg=NONE guifg=#4f97d7 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi cssSelectorOp2 ctermfg=32 ctermbg=NONE guifg=#4f97d7 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi cssImportant ctermfg=70 ctermbg=NONE guifg=#67b11d guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi cssVendor ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi cssVendor ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi cssTextProp ctermfg=29 ctermbg=NONE guifg=#2d9574 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi cssAnimationProp ctermfg=29 ctermbg=NONE guifg=#2d9574 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi cssUIProp ctermfg=136 ctermbg=NONE guifg=#b1951d guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -401,7 +401,7 @@ if &background ==# 'dark'
     hi cssRenderProp ctermfg=29 ctermbg=NONE guifg=#2d9574 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi cssColorProp ctermfg=29 ctermbg=NONE guifg=#2d9574 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi cssGeneratedContentProp ctermfg=29 ctermbg=NONE guifg=#2d9574 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javaScriptBraces ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javaScriptBraces ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi javaScriptFunction ctermfg=29 ctermbg=NONE guifg=#2d9574 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi javaScriptIdentifier ctermfg=196 ctermbg=NONE guifg=#f2241f guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi javaScriptMember ctermfg=32 ctermbg=NONE guifg=#4f97d7 guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -416,23 +416,23 @@ if &background ==# 'dark'
     hi javascriptClassName ctermfg=136 ctermbg=NONE guifg=#b1951d guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi javascriptClassSuperName ctermfg=136 ctermbg=NONE guifg=#b1951d guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi javascriptGlobal ctermfg=136 ctermbg=NONE guifg=#b1951d guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptEndColons ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptFuncArg ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptGlobalMethod ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptNodeGlobal ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptBOMWindowProp ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptArrayMethod ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptArrayStaticMethod ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptCacheMethod ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptDateMethod ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptMathStaticMethod ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptURLUtilsProp ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptBOMNavigatorProp ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptDOMDocMethod ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptDOMDocProp ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptBOMLocationMethod ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptBOMWindowMethod ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptStringMethod ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptEndColons ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptFuncArg ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptGlobalMethod ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptNodeGlobal ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptBOMWindowProp ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptArrayMethod ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptArrayStaticMethod ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptCacheMethod ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptDateMethod ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptMathStaticMethod ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptURLUtilsProp ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptBOMNavigatorProp ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptDOMDocMethod ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptDOMDocProp ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptBOMLocationMethod ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptBOMWindowMethod ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptStringMethod ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi javascriptVariable ctermfg=173 ctermbg=NONE guifg=#e18254 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi javascriptIdentifier ctermfg=173 ctermbg=NONE guifg=#e18254 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi javascriptClassSuper ctermfg=173 ctermbg=NONE guifg=#e18254 guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -445,23 +445,23 @@ if &background ==# 'dark'
     hi javascriptExceptions ctermfg=168 ctermbg=NONE guifg=#ce537a guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi javascriptMessage ctermfg=168 ctermbg=NONE guifg=#ce537a guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi javascriptTemplateSB ctermfg=29 ctermbg=NONE guifg=#2d9574 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptTemplateSubstitution ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptLabel ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptObjectLabel ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptPropertyName ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptLogicSymbols ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptTemplateSubstitution ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptLabel ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptObjectLabel ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptPropertyName ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptLogicSymbols ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi javascriptArrowFunc ctermfg=136 ctermbg=NONE guifg=#b1951d guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi javascriptDocParamName ctermfg=240 ctermbg=NONE guifg=#5b5b5b guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi javascriptDocTags ctermfg=240 ctermbg=NONE guifg=#5b5b5b guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi javascriptDocNotation ctermfg=240 ctermbg=NONE guifg=#5b5b5b guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi javascriptDocParamType ctermfg=240 ctermbg=NONE guifg=#5b5b5b guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi javascriptDocNamedParamType ctermfg=240 ctermbg=NONE guifg=#5b5b5b guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptBrackets ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptDOMElemAttrs ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptDOMEventMethod ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptDOMNodeMethod ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptDOMStorageMethod ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi javascriptHeadersMethod ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptBrackets ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptDOMElemAttrs ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptDOMEventMethod ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptDOMNodeMethod ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptDOMStorageMethod ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi javascriptHeadersMethod ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi javascriptAsyncFuncKeyword ctermfg=168 ctermbg=NONE guifg=#ce537a guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
     hi javascriptAwaitFuncKeyword ctermfg=168 ctermbg=NONE guifg=#ce537a guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
     hi! link jsClassKeyword Keyword
@@ -483,7 +483,7 @@ if &background ==# 'dark'
     hi jsObjectColon ctermfg=168 ctermbg=NONE guifg=#ce537a guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi jsFuncArgs ctermfg=74 ctermbg=NONE guifg=#58b0d9 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi jsFuncBraces ctermfg=68 ctermbg=NONE guifg=#7590db guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi jsVariableDef ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi jsVariableDef ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi! link jsObjectBraces Special
     hi jsObjectValue ctermfg=147 ctermbg=NONE guifg=#b7b7ff guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi jsClassBlock ctermfg=68 ctermbg=NONE guifg=#7590db guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -496,10 +496,10 @@ if &background ==# 'dark'
     hi! link typeScriptFuncKeyword Function
     hi! link typeScriptIdentifier Identifier
     hi typeScriptBraces ctermfg=168 ctermbg=NONE guifg=#ce537a guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi typeScriptEndColons ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi typeScriptDOMObjects ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi typeScriptEndColons ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi typeScriptDOMObjects ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi! link typeScriptAjaxMethods Function
-    hi typeScriptLogicSymbols ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi typeScriptLogicSymbols ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi! link typeScriptDocSeeTag Comment
     hi! link typeScriptDocParam Comment
     hi! link typeScriptDocTags vimCommentTitle
@@ -560,17 +560,17 @@ if &background ==# 'dark'
     hi elixirStringDelimiter ctermfg=70 ctermbg=NONE guifg=#67b11d guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi elixirInterpolationDelimiter ctermfg=29 ctermbg=NONE guifg=#2d9574 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi elixirModuleDeclaration ctermfg=136 ctermbg=NONE guifg=#b1951d guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi scalaNameDefinition ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi scalaCaseFollowing ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi scalaCapitalWord ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi scalaTypeExtension ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi scalaNameDefinition ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi scalaCaseFollowing ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi scalaCapitalWord ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi scalaTypeExtension ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi scalaKeyword ctermfg=168 ctermbg=NONE guifg=#ce537a guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
     hi scalaKeywordModifier ctermfg=168 ctermbg=NONE guifg=#ce537a guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi scalaSpecial ctermfg=29 ctermbg=NONE guifg=#2d9574 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi scalaOperator ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi scalaOperator ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi scalaTypeDeclaration ctermfg=136 ctermbg=NONE guifg=#b1951d guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi scalaTypeTypePostDeclaration ctermfg=136 ctermbg=NONE guifg=#b1951d guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi scalaInstanceDeclaration ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi scalaInstanceDeclaration ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi scalaInterpolation ctermfg=29 ctermbg=NONE guifg=#2d9574 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi markdownItalic ctermfg=243 ctermbg=NONE guifg=#727272 guibg=NONE guisp=NONE cterm=NONE,italic gui=NONE,italic
     hi markdownH1 ctermfg=32 ctermbg=NONE guifg=#4f97d7 guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
@@ -603,9 +603,9 @@ if &background ==# 'dark'
     hi markdownUrlTitleDelimiter ctermfg=70 ctermbg=NONE guifg=#67b11d guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi! link markdownLinkText htmlLink
     hi! link markdownIdDeclaration markdownLinkText
-    hi haskellType ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi haskellIdentifier ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi haskellSeparator ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi haskellType ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi haskellIdentifier ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi haskellSeparator ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi haskellDelimiter ctermfg=240 ctermbg=NONE guifg=#5b5b5b guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi haskellOperators ctermfg=32 ctermbg=NONE guifg=#4f97d7 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi haskellBacktick ctermfg=173 ctermbg=NONE guifg=#e18254 guibg=NONE guisp=NONE cterm=NONE gui=NONE
@@ -626,8 +626,8 @@ if &background ==# 'dark'
     hi haskellChar ctermfg=70 ctermbg=NONE guifg=#67b11d guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi jsonKeyword ctermfg=70 ctermbg=NONE guifg=#67b11d guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi jsonQuote ctermfg=70 ctermbg=NONE guifg=#67b11d guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi jsonBraces ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
-    hi jsonString ctermfg=249 ctermbg=NONE guifg=#b2b2b2 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi jsonBraces ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi jsonString ctermfg=249 ctermbg=NONE guifg=#fff0f5 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   endif
   finish
 endif
@@ -1259,7 +1259,7 @@ finish
 " Color: bg3        #0a0814 ~
 " Color: bg4        #34323e ~
 " Color: fg0        #cdcdcd ~
-" Color: fg1        #b2b2b2 ~
+" Color: fg1        #fff0f5 ~
 " Color: fg2        #8e8e8e ~
 " Color: fg3        #727272 ~
 " Color: fg4        #5b5b5b ~
